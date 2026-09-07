@@ -1,13 +1,13 @@
 :root {
-  --bg: #f4eee2;
-  --bg-alt: #dfe6d4;
-  --card: #fffaf0;
-  --text: #17352a;
-  --muted: #5b6a5d;
-  --primary: #e9783b;
-  --primary-dark: #b84d27;
-  --deep: #17352a;
-  --line: rgba(23, 53, 42, 0.16);
+  --bg: #f2f0eb;
+  --bg-alt: #e4e2dc;
+  --card: #fffdf8;
+  --text: #202522;
+  --muted: #68706b;
+  --primary: #303833;
+  --primary-dark: #1f2622;
+  --deep: #202a25;
+  --line: rgba(32, 37, 34, 0.16);
 }
 
 * {
@@ -62,7 +62,6 @@ a {
 }
 
 .brand {
-  font-family: "Space Grotesk", sans-serif;
   font-size: 1.3rem;
   font-weight: 800;
 }
@@ -101,7 +100,6 @@ a {
 }
 
 .hero h1 {
-  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(2.6rem, 6vw, 5rem);
   line-height: 1.05;
   letter-spacing: 0;
@@ -109,7 +107,7 @@ a {
 
 .hero h1 span {
   display: block;
-  color: #f5a25d;
+  color: #d7d5ce;
 }
 
 .lead {
@@ -146,13 +144,12 @@ a {
 }
 
 .profile-box {
-  background: var(--primary);
-  border: 1px solid rgba(244, 238, 226, 0.25);
+  background: var(--card);
+  border: 1px solid var(--line);
   border-radius: 4px;
   padding: 2rem;
   text-align: center;
-  transform: rotate(2deg);
-  box-shadow: 14px 14px 0 #f5a25d;
+  box-shadow: 14px 14px 0 rgba(32, 37, 34, 0.14);
 }
 
 .avatar {
@@ -162,7 +159,7 @@ a {
   display: grid;
   place-items: center;
   background: var(--deep);
-  color: #f5a25d;
+  color: var(--bg);
   margin: 0 auto 1rem;
   font-size: 2rem;
   font-weight: 800;
@@ -173,7 +170,7 @@ a {
 }
 
 .profile-box p {
-  color: var(--deep);
+  color: var(--muted);
 }
 
 .section-heading {
@@ -181,7 +178,6 @@ a {
 }
 
 .section-heading h2 {
-  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(2rem, 3vw, 3rem);
   letter-spacing: 0;
 }
@@ -216,7 +212,6 @@ a {
 }
 
 .skill-card h3 {
-  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 0.5rem;
 }
 
@@ -242,15 +237,15 @@ a {
 }
 
 .thumb-one {
-  background: #c5d3b5;
+  background: #d9d7d0;
 }
 
 .thumb-two {
-  background: #e9783b;
+  background: #c9cdc8;
 }
 
 .thumb-three {
-  background: #17352a;
+  background: #b8beb9;
 }
 
 .project-body {
@@ -258,7 +253,6 @@ a {
 }
 
 .project-body h3 {
-  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 0.5rem;
 }
 
@@ -297,7 +291,7 @@ a {
 }
 
 .contact-box .eyebrow {
-  color: #f5a25d;
+  color: #d7d5ce;
 }
 
 .contact-list {
