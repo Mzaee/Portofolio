@@ -232,22 +232,6 @@ a {
   overflow: hidden;
 }
 
-.project-thumb {
-  height: 220px;
-}
-
-.thumb-one {
-  background: #d9d7d0;
-}
-
-.thumb-two {
-  background: #c9cdc8;
-}
-
-.thumb-three {
-  background: #b8beb9;
-}
-
 .project-body {
   padding: 1.5rem;
 }
