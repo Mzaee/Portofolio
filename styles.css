@@ -1,13 +1,13 @@
 :root {
-  --bg: #f2f0eb;
-  --bg-alt: #e4e2dc;
-  --card: #fffdf8;
-  --text: #202522;
-  --muted: #68706b;
-  --primary: #303833;
-  --primary-dark: #1f2622;
-  --deep: #202a25;
-  --line: rgba(32, 37, 34, 0.16);
+  --bg: #f4eee2;
+  --bg-alt: #dfe6d4;
+  --card: #fffaf0;
+  --text: #17352a;
+  --muted: #5b6a5d;
+  --primary: #e9783b;
+  --primary-dark: #b84d27;
+  --deep: #17352a;
+  --line: rgba(23, 53, 42, 0.16);
 }
 
 * {
@@ -107,7 +107,7 @@ a {
 
 .hero h1 span {
   display: block;
-  color: #d7d5ce;
+  color: #f5a25d;
 }
 
 .lead {
@@ -144,12 +144,12 @@ a {
 }
 
 .profile-box {
-  background: var(--card);
-  border: 1px solid var(--line);
+  background: var(--primary);
+  border: 1px solid rgba(244, 238, 226, 0.25);
   border-radius: 4px;
   padding: 2rem;
   text-align: center;
-  box-shadow: 14px 14px 0 rgba(32, 37, 34, 0.14);
+  box-shadow: 14px 14px 0 #f5a25d;
 }
 
 .avatar {
@@ -159,7 +159,7 @@ a {
   display: grid;
   place-items: center;
   background: var(--deep);
-  color: var(--bg);
+  color: #f5a25d;
   margin: 0 auto 1rem;
   font-size: 2rem;
   font-weight: 800;
@@ -170,7 +170,7 @@ a {
 }
 
 .profile-box p {
-  color: var(--muted);
+  color: var(--deep);
 }
 
 .section-heading {
@@ -275,7 +275,7 @@ a {
 }
 
 .contact-box .eyebrow {
-  color: #d7d5ce;
+  color: #f5a25d;
 }
 
 .contact-list {
