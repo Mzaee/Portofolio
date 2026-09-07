@@ -1,12 +1,13 @@
 :root {
-  --bg: #f8fafc;
-  --bg-alt: #eef2ff;
-  --card: #ffffff;
-  --text: #0f172a;
-  --muted: #475569;
-  --primary: #7c3aed;
-  --primary-dark: #5b21b6;
-  --line: rgba(15, 23, 42, 0.08);
+  --bg: #f4eee2;
+  --bg-alt: #dfe6d4;
+  --card: #fffaf0;
+  --text: #17352a;
+  --muted: #5b6a5d;
+  --primary: #e9783b;
+  --primary-dark: #b84d27;
+  --deep: #17352a;
+  --line: rgba(23, 53, 42, 0.16);
 }
 
 * {
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -45,7 +46,7 @@ a {
 }
 
 .site-header {
-  background: rgba(248, 250, 252, 0.9);
+  background: rgba(244, 238, 226, 0.92);
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
@@ -61,6 +62,7 @@ a {
 }
 
 .brand {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.3rem;
   font-weight: 800;
 }
@@ -76,8 +78,10 @@ a {
 }
 
 .hero {
-  padding: 5rem 0 4rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  padding: 7rem 0 6rem;
+  background: var(--deep);
+  color: var(--bg);
+  overflow: hidden;
 }
 
 .hero-grid {
@@ -97,14 +101,15 @@ a {
 }
 
 .hero h1 {
+  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(2.6rem, 6vw, 5rem);
   line-height: 1.05;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 }
 
 .hero h1 span {
   display: block;
-  color: var(--primary);
+  color: #f5a25d;
 }
 
 .lead {
@@ -112,6 +117,7 @@ a {
   color: var(--muted);
   font-size: 1.08rem;
   max-width: 560px;
+  color: #dbe4d6;
 }
 
 .actions {
@@ -129,23 +135,24 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
+  background: var(--primary);
+  color: var(--deep);
 }
 
 .btn-secondary {
-  background: white;
-  color: var(--text);
-  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--bg);
+  border: 1px solid rgba(244, 238, 226, 0.5);
 }
 
 .profile-box {
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 24px;
+  background: var(--primary);
+  border: 1px solid rgba(244, 238, 226, 0.25);
+  border-radius: 4px;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+  transform: rotate(2deg);
+  box-shadow: 14px 14px 0 #f5a25d;
 }
 
 .avatar {
@@ -154,8 +161,8 @@ a {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: white;
+  background: var(--deep);
+  color: #f5a25d;
   margin: 0 auto 1rem;
   font-size: 2rem;
   font-weight: 800;
@@ -166,7 +173,7 @@ a {
 }
 
 .profile-box p {
-  color: var(--muted);
+  color: var(--deep);
 }
 
 .section-heading {
@@ -174,11 +181,13 @@ a {
 }
 
 .section-heading h2 {
+  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: 0;
 }
 
 .about-box {
-  background: white;
+  background: var(--card);
   border: 1px solid var(--line);
   border-radius: 20px;
   padding: 1.8rem;
@@ -200,13 +209,14 @@ a {
 }
 
 .skill-card {
-  background: white;
+  background: var(--card);
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 1.5rem;
 }
 
 .skill-card h3 {
+  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 0.5rem;
 }
 
@@ -221,7 +231,7 @@ a {
 }
 
 .project-card {
-  background: white;
+  background: var(--card);
   border: 1px solid var(--line);
   border-radius: 20px;
   overflow: hidden;
@@ -248,6 +258,7 @@ a {
 }
 
 .project-body h3 {
+  font-family: "Space Grotesk", sans-serif;
   margin-bottom: 0.5rem;
 }
 
@@ -259,7 +270,7 @@ a {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.65rem 0.9rem;
-  border-radius: 8px;
+  border-radius: 999px;
   background: var(--primary);
   color: white;
   font-weight: 600;
@@ -275,7 +286,7 @@ a {
 }
 
 .contact-box {
-  background: linear-gradient(135deg, #111827, #1f2937);
+  background: var(--deep);
   color: white;
   border-radius: 24px;
   padding: 2rem;
@@ -286,7 +297,7 @@ a {
 }
 
 .contact-box .eyebrow {
-  color: #c4b5fd;
+  color: #f5a25d;
 }
 
 .contact-list {
