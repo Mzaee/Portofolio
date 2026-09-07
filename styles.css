@@ -255,6 +255,21 @@ a {
   color: var(--muted);
 }
 
+.project-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.project-button:hover {
+  background: var(--primary-dark);
+}
+
 .contact-section {
   padding-top: 2rem;
 }
