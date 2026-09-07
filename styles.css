@@ -285,6 +285,19 @@ a {
   font-weight: 600;
 }
 
+.contact-button {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: white;
+}
+
 .site-footer {
   text-align: center;
   padding: 1.5rem 0 2.5rem;
