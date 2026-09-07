@@ -4,24 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Reza Raehan | F&B, Design & Digital</title>
-    <meta name="description" content="Portfolio multidisiplin Muhammad Reza Raehan di bidang F&B, desain, coffee shop, dan teknologi." />
+    <meta name="description" content="Muhammad Reza Raehan — barista, coffee shop developer, visual designer, and digital builder." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=reference-colors" />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=lumora-adapt" />
   </head>
   <body>
+    <div class="page-loader" aria-label="Loading portfolio">
+      <div class="loader-brand"><span class="mark">✦</span> Reza</div>
+      <p>Ideas, spaces, and systems built with intention.</p>
+      <div class="loader-progress"><span></span></div>
+      <div class="loader-meta"><span>Loading</span><strong>000</strong></div>
+    </div>
+
     <header class="site-header">
       <div class="container nav">
-        <a href="#home" class="brand">Muhammad Reza Raehan</a>
+        <a href="#home" class="brand"><span class="mark">✦</span> Muhammad Reza Raehan</a>
 
         <nav class="nav-menu">
           <a href="#home">Home</a>
           <a href="#about">Tentang</a>
-          <a href="#skills">Skill</a>
-          <a href="#projects">Proyek</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#projects">Work</a>
           <a href="#contact">Kontak</a>
         </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false">☰ <span>Menu</span></button>
       </div>
     </header>
 
@@ -29,8 +37,8 @@
       <section id="home" class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">F&B / visual / digital</p>
-            <h1>Muhammad Reza Raehan <span>Ideas into places, products & systems.</span></h1>
+            <p class="eyebrow"><i></i> F&B / Visual / Digital</p>
+            <h1>Ideas into places,<br /><em>products & systems.</em></h1>
             <p class="lead">
               Barista, coffee shop developer, dan lulusan Informatika yang senang mengubah ide
               menjadi pengalaman nyata — dari konsep ruang dan poster hingga sistem digital yang
@@ -38,8 +46,8 @@
             </p>
 
             <div class="actions">
-              <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
-              <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+              <a href="#projects" class="btn btn-primary">Lihat Work <span>→</span></a>
+              <a href="#contact" class="btn btn-secondary">Let's Talk <span>↗</span></a>
             </div>
           </div>
 
@@ -47,8 +55,14 @@
             <div class="avatar">MR</div>
             <h3>Muhammad Reza Raehan</h3>
             <p>Barista · Designer · Builder</p>
+            <small>Based in Indonesia · Available for work</small>
           </div>
         </div>
+        <div class="hero-watermark">REZA</div>
+      </section>
+
+      <section class="create-band" aria-label="Creative direction">
+        <div class="container create-grid"><span>We</span><strong>Build</strong><b>→</b><i>Better</i></div>
       </section>
 
       <section id="about" class="section">
@@ -119,6 +133,7 @@
           <div class="projects-grid">
             <article class="project-card">
               <div class="project-body">
+                <div class="project-meta">Digital system — 2025</div>
                 <h3>Aplikasi Perhitungan HPP</h3>
                 <p>
                   Aplikasi untuk menghitung harga pokok produksi dengan proses yang lebih cepat,
@@ -129,6 +144,7 @@
 
             <article class="project-card">
               <div class="project-body">
+                <div class="project-meta">Web & mobile — 2025</div>
                 <h3>Inventory Web & Mobile</h3>
                 <p>
                   Sistem inventory berbasis web dan mobile untuk studi kasus Widia Collection,
@@ -140,6 +156,7 @@
 
             <article class="project-card">
               <div class="project-body">
+                <div class="project-meta">F&B direction — 2024</div>
                 <h3>Project Lainnya</h3>
                 <p>
                   Fokus pada solusi digital yang mempermudah pekerjaan serta meningkatkan
@@ -148,6 +165,27 @@
               </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section-alt">
+        <div class="container">
+          <p class="eyebrow">What I do</p>
+          <h2>Ruang kerja<br />yang saya pahami.</h2>
+          <div class="service-list">
+            <a href="#skills"><b>01</b><strong>F&B & Coffee Shop</strong><span>Konsep, operasional, dan pengembangan tempat.</span><i>↗</i></a>
+            <a href="#skills"><b>02</b><strong>Poster & Visual Design</strong><span>Visual yang membawa karakter dan cerita brand.</span><i>↗</i></a>
+            <a href="#skills"><b>03</b><strong>Interior Concept</strong><span>Ruang yang fungsional, hangat, dan terasa hidup.</span><i>↗</i></a>
+            <a href="#skills"><b>04</b><strong>Digital Business Systems</strong><span>Inventory, HPP, dan sistem kerja yang lebih rapi.</span><i>↗</i></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats section">
+        <div class="container stats-panel">
+          <p class="eyebrow">By the work</p>
+          <h2>Pengalaman nyata,<br />bukan sekadar label.</h2>
+          <div class="stats-grid"><div><strong>05+</strong><span>Area keahlian</span></div><div><strong>03</strong><span>Project digital</span></div><div><strong>01</strong><span>Downloadable system</span></div><div><strong>∞</strong><span>Rasa ingin belajar</span></div></div>
         </div>
       </section>
 
@@ -173,6 +211,15 @@
         <p>© <span id="year"></span> Muhammad Reza Raehan</p>
       </div>
     </footer>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <button class="menu-close" type="button">✕ Close</button>
+      <nav><a href="#home">01 <span>Home</span></a><a href="#about">02 <span>About</span></a><a href="#projects">03 <span>Work</span></a><a href="#services">04 <span>Services</span></a><a href="#contact">05 <span>Contact</span></a></nav>
+    </div>
+
+    <div class="contact-modal" aria-hidden="true">
+      <div class="modal-card"><button class="modal-close" type="button">✕</button><p class="eyebrow">Start a conversation</p><h2>Ada project di kepala?</h2><p class="modal-copy">Ceritakan ide, kebutuhan, atau tempat yang ingin kamu kembangkan.</p><form><label>Nama<input required placeholder="Nama kamu" /></label><label>Email<input required type="email" placeholder="email@kamu.com" /></label><label>Pesan<textarea required rows="4" placeholder="Ceritakan sedikit tentang project-nya"></textarea></label><button class="btn btn-primary" type="submit">Kirim pesan <span>↗</span></button></form><p class="form-success">Thanks! Pesan kamu sudah siap dikirim.</p></div>
+    </div>
 
     <script src="script.js"></script>
   </body>
