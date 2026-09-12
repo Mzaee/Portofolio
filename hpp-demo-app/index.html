@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HPP & Operational Dashboard</title>
+    <meta
+      name="description"
+      content="Demo dashboard for HPP, COGS, BOP, ROI, margin, and cash flow analytics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">✦</div>
+          <div>
+            <p class="brand-label">Operational Suite</p>
+            <h1>HPP<br />Dashboard</h1>
+          </div>
+        </div>
+
+        <nav class="side-nav">
+          <a class="active" href="#overview">Overview</a>
+          <a href="#products">Products</a>
+          <a href="#sheet-data">Sheet Data</a>
+          <a href="#analytics">Analytics</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <p class="mini-label">Data source</p>
+          <strong>Google Sheet</strong>
+          <small>CSV import/export ready</small>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Production & Pricing</p>
+            <h2>Business Health Monitor</h2>
+          </div>
+
+          <div class="topbar-actions">
+            <label class="file-input">
+              <input id="importCsv" type="file" accept=".csv,text/csv" />
+              <span>Import Sheet</span>
+            </label>
+            <button id="exportCsv" class="btn btn-primary" type="button">Export CSV</button>
+            <button id="loadDemo" class="btn btn-secondary" type="button">Load Demo</button>
+          </div>
+        </header>
+
+        <section class="intro-banner panel">
+          <div>
+            <p class="eyebrow">Google Sheet workflow</p>
+            <h3>Operational visibility for menu pricing and production decisions.</h3>
+          </div>
+          <div class="mini-badges">
+            <span>HPP</span>
+            <span>COGS</span>
+            <span>ROI</span>
+            <span>Food Cost</span>
+          </div>
+        </section>
+
+        <section id="overview" class="kpis">
+          <article class="kpi-card accent">
+            <p>Average HPP</p>
+            <h3 id="kpiHpp">Rp 0</h3>
+            <span>Per product unit</span>
+          </article>
+          <article class="kpi-card">
+            <p>COGS</p>
+            <h3 id="kpiCogs">Rp 0</h3>
+            <span>Total cost of goods sold</span>
+          </article>
+          <article class="kpi-card">
+            <p>BOP</p>
+            <h3 id="kpiBop">Rp 0</h3>
+            <span>Operational overhead</span>
+          </article>
+          <article class="kpi-card">
+            <p>ROI</p>
+            <h3 id="kpiRoi">0%</h3>
+            <span>Return on investment</span>
+          </article>
+        </section>
+
+        <section class="summary-grid" id="analytics">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Operational Snapshot</h3>
+            </div>
+            <div class="metric-list">
+              <div class="metric-row">
+                <span>Cash Flow</span>
+                <strong id="metricCashFlow">Rp 0</strong>
+              </div>
+              <div class="metric-row">
+                <span>Working Capital</span>
+                <strong id="metricWorkingCapital">Rp 0</strong>
+              </div>
+              <div class="metric-row">
+                <span>Capex</span>
+                <strong id="metricCapex">Rp 0</strong>
+              </div>
+              <div class="metric-row">
+                <span>Margin</span>
+                <strong id="metricMargin">0%</strong>
+              </div>
+              <div class="metric-row">
+                <span>Food Cost</span>
+                <strong id="metricFoodCost">0%</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Profitability</h3>
+            </div>
+            <div class="bar-chart" id="profitChart"></div>
+          </div>
+        </section>
+
+        <section id="products" class="panel table-panel">
+          <div class="panel-header with-actions">
+            <h3>Product Entry</h3>
+            <button id="addRow" class="btn btn-secondary" type="button">Add Product</button>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Raw</th>
+                  <th>Packaging</th>
+                  <th>Labor</th>
+                  <th>Overhead</th>
+                  <th>Fixed</th>
+                  <th>Units</th>
+                  <th>Price</th>
+                  <th>Sales</th>
+                  <th>Cash In</th>
+                  <th>Cash Out</th>
+                  <th>Capex</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="productTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="sheet-data" class="panel sheet-panel">
+          <div class="panel-header">
+            <h3>Sheet Notes</h3>
+          </div>
+          <div class="sheet-box">
+            <p>
+              This demo reads CSV data in a Google Sheet-friendly format. The app is designed to work as a lightweight HPP prototype for import/export workflows and operational evaluation.
+            </p>
+            <pre id="sheetFormat">Product,Category,RawMaterial,Packaging,Labor,Overhead,FixedCost,UnitsProduced,SellingPrice,SalesVolume,CashIn,CashOut,Capex
+Espresso Latte,Drinks,6000,1200,3500,2000,5000,200,18000,160,2880000,2100000,5000000
+Signature Pancake,Food,9000,1500,4300,2500,6000,120,25000,90,2250000,1750000,3000000</pre>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
