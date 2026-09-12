@@ -12,6 +12,18 @@ const successMessage = document.querySelector('.form-success');
 
 if (year) year.textContent = new Date().getFullYear();
 
+const projectCarousel = document.getElementById('projectCarousel');
+const projectButtons = document.querySelectorAll('.project-scroll-btn');
+
+projectButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    if (!projectCarousel) return;
+    const direction = button.dataset.dir === 'next' ? 1 : -1;
+    const cardWidth = projectCarousel.querySelector('.project-card')?.getBoundingClientRect().width || 340;
+    projectCarousel.scrollBy({ left: direction * (cardWidth + 20), behavior: 'smooth' });
+  });
+});
+
 const openModal = (event) => {
   if (event) event.preventDefault();
   modal.classList.add('open');

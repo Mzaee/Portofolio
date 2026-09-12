@@ -219,20 +219,50 @@ a {
   color: var(--muted);
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
-  gap: 1.25rem;
-  min-width: max-content;
+.project-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
 }
 
-.projects-grid-scroll {
+.project-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.project-scroll-btn,
+.project-all-btn {
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-scroll-btn:hover,
+.project-all-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 1);
+}
+
+.projects-wrap {
+  overflow: hidden;
+}
+
+.projects-grid {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(300px, 1fr);
+  grid-auto-columns: minmax(320px, 1fr);
+  gap: 1.25rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 .project-card {
@@ -245,6 +275,11 @@ a {
 
 .project-body {
   padding: 1.5rem;
+}
+
+.project-body h3 {
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  line-height: 1.1;
 }
 
 .project-actions {

@@ -123,52 +123,61 @@
 
       <section id="projects" class="section">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Proyek</p>
-            <h2>Proyek yang sudah dibuat</h2>
+          <div class="section-heading project-heading">
+            <div>
+              <p class="eyebrow">Proyek</p>
+              <h2>Proyek yang sudah dibuat</h2>
+            </div>
+            <div class="project-controls">
+              <button class="project-scroll-btn" type="button" data-dir="prev" aria-label="Previous project">←</button>
+              <button class="project-scroll-btn" type="button" data-dir="next" aria-label="Next project">→</button>
+              <a class="project-all-btn" href="#projects">All Projects</a>
+            </div>
           </div>
 
-          <div class="projects-grid projects-grid-scroll">
-            <article class="project-card">
-              <div class="project-body">
-                <div class="project-meta">Dashboard demo — 2025</div>
-                <h3>HPP & Operational Dashboard</h3>
-                <p>
-                  Demo aplikasi untuk menghitung HPP, COGS, BOP, ROI, cash flow, dan margin
-                  dengan workflow seperti spreadsheet yang mudah dipresentasikan.
-                </p>
-                <div class="project-actions">
-                  <a class="project-button" href="hpp-demo-app/index.html" target="_blank" rel="noreferrer">Open Demo</a>
-                  <a class="project-button" href="hpp-demo.zip" download>Download HPP</a>
+          <div class="projects-wrap">
+            <div class="projects-grid projects-grid-scroll" id="projectCarousel">
+              <article class="project-card">
+                <div class="project-body">
+                  <div class="project-meta">Dashboard demo — 2025</div>
+                  <h3>HPP & Operational Dashboard</h3>
+                  <p>
+                    Demo aplikasi untuk menghitung HPP, COGS, BOP, ROI, cash flow, dan margin
+                    dengan workflow seperti spreadsheet yang mudah dipresentasikan.
+                  </p>
+                  <div class="project-actions">
+                    <a class="project-button" href="hpp-demo-app/index.html" target="_blank" rel="noreferrer">Open Demo</a>
+                    <a class="project-button" href="hpp-demo.zip" download>Download HPP</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="project-card">
-              <div class="project-body">
-                <div class="project-meta">Web & mobile — 2025</div>
-                <h3>Inventory Web & Mobile</h3>
-                <p>
-                  Sistem inventory berbasis web dan mobile untuk studi kasus Widia Collection,
-                  membantu pengelolaan stok dan data barang secara lebih terstruktur.
-                </p>
-                <div class="project-actions">
-                  <a class="project-button" href="inventory-demo/index.html" target="_blank" rel="noreferrer">Open Demo</a>
-                  <a class="project-button" href="inventory.rar" download>Download Inventory</a>
+              <article class="project-card">
+                <div class="project-body">
+                  <div class="project-meta">Web & mobile — 2025</div>
+                  <h3>Inventory Web & Mobile</h3>
+                  <p>
+                    Sistem inventory berbasis web dan mobile untuk studi kasus Widia Collection,
+                    membantu pengelolaan stok dan data barang secara lebih terstruktur.
+                  </p>
+                  <div class="project-actions">
+                    <a class="project-button" href="inventory-demo/index.html" target="_blank" rel="noreferrer">Open Demo</a>
+                    <a class="project-button" href="inventory.rar" download>Download Inventory</a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="project-card">
-              <div class="project-body">
-                <div class="project-meta">F&B direction — 2024</div>
-                <h3>Project Lainnya</h3>
-                <p>
-                  Fokus pada solusi digital yang mempermudah pekerjaan serta meningkatkan
-                  efisiensi operasional pengguna.
-                </p>
-              </div>
-            </article>
+              <article class="project-card">
+                <div class="project-body">
+                  <div class="project-meta">F&B direction — 2024</div>
+                  <h3>Project Lainnya</h3>
+                  <p>
+                    Fokus pada solusi digital yang mempermudah pekerjaan serta meningkatkan
+                    efisiensi operasional pengguna.
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
